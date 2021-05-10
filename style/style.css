@@ -1,0 +1,177 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização de tags basicas */
+body {
+    font-family: 'Roboto', sans-serif;
+
+    background: linear-gradient(rgba(34, 33, 33, 0.7), rgba(34, 33, 33, 0.7)), url('https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGFzc3dvcmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 25px;
+    text-align: center;
+
+    text-shadow: 1px 1px 5px #8a8787;
+    color: #201d1d;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+
+    margin-top: 25px;
+}
+
+span {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+a {
+    color: #242121;
+    text-decoration: none;
+
+    margin-top: 12px;
+
+    transition: 0.5s ease-out;
+}
+
+a:hover {
+    color: #080ce9;
+
+    transition: 0.5s ease-out;
+}
+
+
+label {
+    color: #242121;
+    display: inline-block;
+    text-align:  right;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.265rem;
+}
+
+/*  Estilização dos Inputs  */
+input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff5d;
+    font-size: 13px;
+    padding: 13px;
+    margin: 0.7rem auto 0.5rem auto;
+    
+    border: none;
+    border-radius: 3px;
+
+    transition: 0.5s ease-in;
+}
+
+input:hover {
+    background-color: #fffefed5;
+
+    transition: 0.5s ease-in;
+}
+
+input:focus {
+    outline: 0;
+}
+
+/* Estilização da div Container */
+.container {
+    background-color: #cac7c7;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 450px;
+    height: 500px;
+
+    margin: 75px auto 0 auto;
+
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 2px 15px 6px rgba(0, 0, 0, 0.59); 
+    box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, 0.59);
+
+    opacity: 0.8;
+}
+
+/* Estilização do input button */
+.button {
+    background-color: rgb(45, 91, 216);
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+
+    margin: 15px auto 0 auto;
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: 0.7s ease-out;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: rgb(0, 4, 255) ;
+
+    -webkit-box-shadow: 2px 2px 10px 7px rgbargba(15, 15, 15, 0.59); 
+    box-shadow: 2px 2px 10px 1px rgba(15, 15, 15, 0.59);
+
+    transition: 0.7s ease-out;
+}
+
+.button:focus {
+    border: 0 none;
+    box-shadow: 0;
+    outline: 0;
+}
+
+.button:active {
+    background-color: rgb(55, 100, 236) ;
+}
+
+
+/* Páragrafo Final */
+
+.signup {
+     margin-top: 0;
+}
+
+/* Responsividade */
+@media (max-width: 550px)  {
+    .container {
+        width: 80%;
+
+        margin: 75px auto 0 auto;
+    }
+
+    .button {
+        margin: auto;
+        padding: auto auto;
+    }
+
+}
+
+@media (max-width: 500px) {
+    input {
+        margin: 4px;
+    }
+}
